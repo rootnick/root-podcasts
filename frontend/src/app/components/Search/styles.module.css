@@ -1,0 +1,23 @@
+.search {
+  display: flex;
+  gap: 16px;
+  border-radius: 12px;
+  box-shadow:
+    0 24px 48px 0 rgb(230 235 245 / 40%),
+    0 1px 4px 0 #e3ebfc;
+  background-color: #fff;
+  padding: 0 20px;
+  align-items: center;
+  height: 50px;
+  max-width: 600px;
+}
+
+.input {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+
+.input:focus-within {
+  outline: none;
+}

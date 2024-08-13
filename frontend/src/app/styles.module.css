@@ -1,0 +1,15 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.filters {
+  display: flex;
+  align-items: flex-end;
+}
+
+.selects {
+  display: flex;
+  align-items: flex-end;
+}

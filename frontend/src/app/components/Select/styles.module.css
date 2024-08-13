@@ -1,0 +1,19 @@
+.selectWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.select {
+  border: none;
+  box-shadow: 0 24px 48px 0 rgb(230 235 245 / 40%), 0 1px 4px 0 #e3ebfc;
+  padding: 16px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.select:focus-within {
+  outline: none;
+}

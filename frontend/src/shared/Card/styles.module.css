@@ -1,0 +1,39 @@
+.card {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  gap: 0;
+  width: 280px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 24px 48px 0 rgb(230 235 245 / 40%), 0 1px 4px 0 #e3ebfc;
+  min-height: 400px;
+}
+
+.image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+.content {
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  padding: 10px 16px 16px;
+  gap: 24px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+}

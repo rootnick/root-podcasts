@@ -1,0 +1,40 @@
+.header {
+  border-bottom: 1px solid #99B1E6;
+}
+
+.header__content {
+  max-width: 1216px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 16px 0;
+  align-items: center;
+  gap: 35px;
+}
+
+.logo {
+  font-size: 20px;
+  line-height: 28px;
+  width: max-content;
+  font-weight: 700;
+}
+
+.header__links {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 16px
+}
+
+.button {
+  background-color: #0D4CD3;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 78px;
+}
