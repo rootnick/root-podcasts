@@ -17,3 +17,5 @@ npm run dev
 backend: Hono.js + sqllite
 
 frontend: Next.js
+
+Контакт: <https://t.me/rootnick>
