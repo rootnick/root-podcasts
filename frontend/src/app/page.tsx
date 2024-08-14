@@ -31,7 +31,7 @@ async function getFilters() {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_APP_BASE_URL}/api/podcasts/filters`
   );
-  const { countries, topics }: FirtersResponse = await res.json();
+  const { countries, topics } = (await res.json()) satisfies FirtersResponse;
 
   return (
     <div className={styles.filters}>

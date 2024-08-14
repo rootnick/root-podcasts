@@ -9,10 +9,10 @@ export async function GET() {
     fetch(`${process.env.BASE_BACKEND}/topics`),
   ]);
 
-  const [countries, topics]: [Dictonary[], Dictonary[]] = [
+  const [countries, topics] = [
     await countriesResponse.json(),
     await topicsResponse.json(),
-  ];
+  ] satisfies [Dictonary[], Dictonary[]];
 
   return NextResponse.json({ countries, topics });
 }
