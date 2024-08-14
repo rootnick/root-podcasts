@@ -1,9 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { STATICTICS_LINK, MAIN_LINK } from "@/constants";
 
-const isAuth = (request: NextRequest) => {
-  return request.cookies.has("user");
-};
+const isAuth = (request: NextRequest) => request.cookies.has("user");
 
 export async function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;

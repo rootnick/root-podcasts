@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
     res = await fetch(`${baseUrl}?${url.searchParams}`);
   }
 
-  const data: Podcast[] = await res.json();
+  const data = (await res.json()) satisfies Podcast[];
 
   return NextResponse.json(data, { status: res.status });
 }
